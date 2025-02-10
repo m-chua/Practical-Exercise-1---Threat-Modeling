@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "7645d79f-d8fb-46a2-95a7-a154096db9f3",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Election Administrator ",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "f29ac24c-924f-48ee-abed-f7c6f318139f",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Voter",
@@ -540,6 +540,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -623,7 +624,6 @@
               ]
             },
             "id": "43fe129d-00bc-4d55-89d2-aa88251a0518",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -662,6 +662,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -745,7 +746,6 @@
               ]
             },
             "id": "53e94128-29a1-4524-98fe-01d87cfb42ad",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -782,6 +782,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -865,7 +866,6 @@
               ]
             },
             "id": "18b2d177-c094-4aff-9764-95ca322a6ed7",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Render Dashboard",
