@@ -955,6 +955,43 @@
         "cells": [
           {
             "position": {
+              "x": 272,
+              "y": 77.96874999999997
+            },
+            "size": {
+              "width": 540,
+              "height": 253.12500000000006
+            },
+            "attrs": {
+              "label": {
+                "text": "Perimeter Firewall"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "eb76e17b-ecc0-4985-af68-96308ab84f10",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Perimeter Firewall",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
               "x": 120,
               "y": 120
             },
@@ -974,6 +1011,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1057,7 +1095,6 @@
               ]
             },
             "id": "9593787b-0123-4030-a539-95fbcd952fc1",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Election Administrator",
@@ -1090,6 +1127,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1173,7 +1211,6 @@
               ]
             },
             "id": "66b105ea-0f56-45ba-88b5-b3299016e60b",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -1400,7 +1437,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authentication Details",
+              "name": "Correct Credentials",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1412,7 +1449,7 @@
               "threats": []
             },
             "labels": [
-              "Authentication Details"
+              "Correct Credentials"
             ],
             "id": "5fd68f84-6f3d-4060-80f3-51968af582ae",
             "source": {
@@ -1420,6 +1457,32 @@
             },
             "target": {
               "cell": "6cb6faf2-44b4-4c6d-a906-583625c33fe4"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Database Trusts Calls from Web App's Identity ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Database Trusts Calls from Web App's Identity "
+            ],
+            "id": "11c3bebb-1f05-4cd4-9b76-dd1d9972626b",
+            "source": {
+              "x": 420,
+              "y": 240
+            },
+            "target": {
+              "x": 730,
+              "y": 240
             }
           },
           {
@@ -1446,6 +1509,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1529,7 +1593,6 @@
               ]
             },
             "id": "bf021897-c81d-44be-a132-4f941a97b5bd",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "MongoDB",
@@ -1547,8 +1610,8 @@
           },
           {
             "position": {
-              "x": 512,
-              "y": 10
+              "x": 752,
+              "y": 120
             },
             "size": {
               "width": 60,
@@ -1566,6 +1629,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1649,7 +1713,6 @@
               ]
             },
             "id": "6cb6faf2-44b4-4c6d-a906-583625c33fe4",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Render Dashboard",
