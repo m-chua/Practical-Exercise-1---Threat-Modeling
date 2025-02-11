@@ -1764,6 +1764,106 @@
           },
           {
             "position": {
+              "x": 350,
+              "y": 420
+            },
+            "size": {
+              "width": 170,
+              "height": 79.6875
+            },
+            "attrs": {
+              "label": {
+                "text": "Dependency"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "0c49ba57-7a47-42f2-ba1e-b9446704d9aa",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 655,
+              "y": 420.15625
+            },
+            "size": {
+              "width": 170,
+              "height": 79.6875
+            },
+            "attrs": {
+              "label": {
+                "text": "Dependency"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "47649c48-c033-4948-869f-c5e11c952682",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "zIndex": -1
+          },
+          {
+            "position": {
+              "x": 955,
+              "y": 280.15625
+            },
+            "size": {
+              "width": 170,
+              "height": 79.6875
+            },
+            "attrs": {
+              "label": {
+                "text": "Dependency"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "0c979ada-90fd-457a-9a3e-12a97b912a12",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "zIndex": -1
+          },
+          {
+            "position": {
+              "x": 966,
+              "y": 109.15625
+            },
+            "size": {
+              "width": 170,
+              "height": 79.6875
+            },
+            "attrs": {
+              "label": {
+                "text": "Dependency"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "4ccf6604-017b-4253-bd46-c63c9f689065",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "zIndex": -1
+          },
+          {
+            "position": {
               "x": 80,
               "y": 210
             },
