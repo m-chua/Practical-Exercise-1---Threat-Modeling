@@ -33,8 +33,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "9276a62e-298f-461d-8f30-40dfafa19616",
             "zIndex": -1,
+            "id": "9276a62e-298f-461d-8f30-40dfafa19616",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Perimeter Firewall",
@@ -433,96 +433,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Authentication Status",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Authentication Status"
-            ],
-            "id": "9d7d907c-07f6-4c93-8b31-88aa22484ebf",
-            "source": {
-              "cell": "53e94128-29a1-4524-98fe-01d87cfb42ad"
-            },
-            "target": {
-              "cell": "43fe129d-00bc-4d55-89d2-aa88251a0518"
-            },
-            "vertices": [
-              {
-                "x": 590,
-                "y": 190
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Invalid Credentials Error Message",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Invalid Credentials Error Message"
-            ],
-            "id": "839513f9-4a10-46bc-8c84-b93ff8ce3f9c",
-            "source": {
-              "cell": "43fe129d-00bc-4d55-89d2-aa88251a0518"
-            },
-            "target": {
-              "cell": "f29ac24c-924f-48ee-abed-f7c6f318139f"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Valid Credentials",
               "description": "",
               "outOfScope": false,
@@ -569,6 +479,107 @@
             "target": {
               "x": 710,
               "y": 150
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Invalid Credentials",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Invalid Credentials"
+            ],
+            "id": "839513f9-4a10-46bc-8c84-b93ff8ce3f9c",
+            "source": {
+              "cell": "43fe129d-00bc-4d55-89d2-aa88251a0518"
+            },
+            "target": {
+              "cell": "f29ac24c-924f-48ee-abed-f7c6f318139f"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authentication Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Authentication Response"
+            ],
+            "id": "9d7d907c-07f6-4c93-8b31-88aa22484ebf",
+            "source": {
+              "cell": "53e94128-29a1-4524-98fe-01d87cfb42ad"
+            },
+            "target": {
+              "cell": "43fe129d-00bc-4d55-89d2-aa88251a0518"
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 190
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
