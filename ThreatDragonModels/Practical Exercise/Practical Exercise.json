@@ -19,7 +19,33 @@
         "cells": [
           {
             "position": {
-              "x": 150,
+              "x": 270.9999999999998,
+              "y": 9.947598300641403e-13
+            },
+            "size": {
+              "width": 600,
+              "height": 281.25
+            },
+            "attrs": {
+              "label": {
+                "text": "Perimeter Firewall"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "9276a62e-298f-461d-8f30-40dfafa19616",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Perimeter Firewall",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 40,
               "y": 60
             },
             "size": {
@@ -135,7 +161,7 @@
           },
           {
             "position": {
-              "x": 150,
+              "x": 40,
               "y": 203
             },
             "size": {
@@ -334,7 +360,7 @@
             },
             "vertices": [
               {
-                "x": 340,
+                "x": 230,
                 "y": 180
               }
             ]
@@ -517,6 +543,32 @@
             },
             "target": {
               "cell": "18b2d177-c094-4aff-9764-95ca322a6ed7"
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Database Trusts Calls from Web App's Identity",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Database Trusts Calls from Web App's Identity"
+            ],
+            "id": "ce1e84ac-7eb6-4216-a77f-3ba3f38b0d75",
+            "source": {
+              "x": 340,
+              "y": 150
+            },
+            "target": {
+              "x": 710,
+              "y": 150
             }
           },
           {
@@ -763,8 +815,8 @@
           },
           {
             "position": {
-              "x": 464,
-              "y": 323
+              "x": 754,
+              "y": 203
             },
             "size": {
               "width": 60,
