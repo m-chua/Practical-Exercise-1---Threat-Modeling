@@ -4541,6 +4541,39 @@
         "cells": [
           {
             "position": {
+              "x": 221.9999999999975,
+              "y": -196.9999999999954
+            },
+            "size": {
+              "width": 1680,
+              "height": 787.5
+            },
+            "attrs": {
+              "label": {
+                "text": "Perimeter Firewall"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "2de4d2fe-0132-463c-b196-c6d13800f0d9",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Perimeter Firewall",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
               "x": 320,
               "y": 100
             },
@@ -4560,6 +4593,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -4643,7 +4677,6 @@
               ]
             },
             "id": "3be67058-36b5-477a-b93d-2072f2c81341",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -4679,6 +4712,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -4762,7 +4796,6 @@
               ]
             },
             "id": "1cd6072e-f7b3-4ade-a2dc-e7191ebd479c",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Authenticated Voter",
@@ -5536,6 +5569,59 @@
             }
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Database Trusts Calls from Web App's Identity",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Database Trusts Calls from Web App's Identity"
+            ],
+            "id": "801c6997-1a7f-4b98-b2af-6276d5c1385f",
+            "source": {
+              "x": 410,
+              "y": -60
+            },
+            "target": {
+              "x": 670,
+              "y": -60
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Sends Transaction to Public Ethereum Blockchain ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Sends Transaction to Public Ethereum Blockchain "
+            ],
+            "id": "415e6be2-a7bb-47e7-a175-8baa3a0d180a",
+            "source": {
+              "x": -30,
+              "y": 370
+            },
+            "target": {
+              "x": -30,
+              "y": 560
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 450,
               "y": -150
@@ -5545,6 +5631,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "MongoDB"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -5556,6 +5645,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -5639,10 +5729,9 @@
               ]
             },
             "id": "9be1fbb4-53df-470e-9d1f-4c5356ad4b89",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "MongoDB",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -5676,6 +5765,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -5759,7 +5849,6 @@
               ]
             },
             "id": "c8549e11-ea74-4a0b-b980-d5e544a144f2",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Re-Authentication",
@@ -5795,6 +5884,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -5878,7 +5968,6 @@
               ]
             },
             "id": "484452f9-bcb7-4606-847c-2ac9c20ebfe5",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Decrypt Private ",
@@ -5914,6 +6003,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -5997,7 +6087,6 @@
               ]
             },
             "id": "12aadc43-ecec-4c1e-baa8-acac7584cd2a",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Generate JSON from Ballot",
@@ -6033,6 +6122,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -6116,7 +6206,6 @@
               ]
             },
             "id": "2d5bc086-40b6-4431-ab26-db4293fed97b",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Hash Ballot",
@@ -6152,6 +6241,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -6235,7 +6325,6 @@
               ]
             },
             "id": "960ce9b5-aa3f-4a7e-9e39-0b3acb87bb0e",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Encrypt Message Digest",
@@ -6271,6 +6360,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -6354,7 +6444,6 @@
               ]
             },
             "id": "f9e84894-03d7-4048-9c3c-d342c424af68",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "Base64 encoder",
@@ -6371,8 +6460,8 @@
           },
           {
             "position": {
-              "x": 120,
-              "y": 480
+              "x": 340,
+              "y": 470
             },
             "size": {
               "width": 60,
@@ -6390,6 +6479,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -6473,7 +6563,6 @@
               ]
             },
             "id": "b674faa5-a3a5-4fe6-be74-ee245c54c0f6",
-            "zIndex": 18,
             "data": {
               "type": "tm.Process",
               "name": "Election Module",
@@ -6490,8 +6579,8 @@
           },
           {
             "position": {
-              "x": -168,
-              "y": 420
+              "x": -250,
+              "y": 470
             },
             "size": {
               "width": 120,
@@ -6499,7 +6588,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Blockchain"
+                "text": "Ethereum Blockchain"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -6512,6 +6601,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 19,
             "ports": {
               "groups": {
                 "top": {
@@ -6595,10 +6685,9 @@
               ]
             },
             "id": "656d312c-030d-40ef-8b98-bfbe0c33e6d9",
-            "zIndex": 19,
             "data": {
               "type": "tm.Store",
-              "name": "Blockchain",
+              "name": "Ethereum Blockchain",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
